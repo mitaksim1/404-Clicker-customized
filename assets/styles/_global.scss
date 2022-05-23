@@ -46,12 +46,11 @@ body {
     a {
         text-decoration: none;
     }
-    .alert-test {
+    .alert-success {
         background-color: $color2;
         color: $color3;
         text-align: center;
         border: none;
-        width: 90%;
         margin: 0 auto;
     }
 }

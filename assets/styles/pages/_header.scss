@@ -2,95 +2,75 @@
    Header section
  ---------------------*/
 .header-section {
-    position: relative;
-    background: $color3;
-    clear: both;
-    overflow: hidden;
-    padding: 18px 0;
-    border-bottom: 1px solid $color1;
+    width: 100%;
+    background-color: $color3;
 
-    .container {
-        width: 100%;
-    }
-}
+    .header-container {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.479);
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem;
 
-.site-logo {
-    float: left;
-    right: 0;
-}
+        .site-logo {
+            display: block;
 
-.site-logo img {
-    position: absolute;
-    width: 5rem;
-    height: 5rem;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 300;
-}
-
-.button {
-    position: absolute;
-    right: 0;
-}
-
-.user-panel {
-    float: right;
-    font-weight: 500;
-    background: $color1;
-    padding: 8px 28px;
-    border-radius: 15px;
-
-    a {
-        font-family: 'EB Garamond', serif;
-        font-size: 14px;
-        color: $color2;
-    }
-
-    &:hover {
-        a {
-            text-decoration: none;
-            color: $color3;
+            img {
+                height: 70px;
+                width: 70px;
+            }
         }
 
-        background: $color4;
-    }
-}
+        .nav-menu {
+            display: flex;
+            align-items: center;
 
-.main-menu {
-    float: inherit;
-    text-align: center;
+            ul {
+                display: flex;
+                list-style: none;
+        
+                li {
+                    text-align: center;
+                    margin-left: .8rem;
 
-    ul {
-        margin-bottom: 0rem;
-        padding-left: 0px;
-        list-style: none;
+                    a {
+                        font-family: 'Press Start 2P', cursive;
+                        color: $color2;
+                        font-size: .8rem;
+                        transition: .2s;
 
-        li {
-            display: inline;
-
-            a {
-                font-family: 'Sansita Swashed', cursive;
-                display: inline-block;
-                font-size: 16px;
-                color: $color2;
-                font-weight: 500;
-                padding: 10px 5px;
-
-                &:hover {
-                    color: $color1;
-                    text-decoration: none;
+                        &:hover {
+                            color: $color1;
+                        }
+                    }
                 }
             }
         }
+
+        .header-buttons {
+            display: flex;
+            align-items: center;
+
+            .header-button a {
+                font-family: 'Press Start 2P', cursive;
+                font-weight: 500;
+                font-size: .6rem;
+                color: $color2;
+                margin-right: .6rem;
+                // text-transform: uppercase;
+                border: 1px solid $color1;
+                padding: 1rem .8rem;
+                border-radius: .6rem;
+                background: $color1;
+                transition: .2s;
+
+                &:hover {
+                    color: $color3;
+                }
+            }
+        }
+        
+            
     }
+
 }
 
-.header-btn {
-    float: right;
-    margin-right: 0;
-}
-
-.nav-switch {
-    display: none;
-}
