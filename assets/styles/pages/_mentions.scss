@@ -1,24 +1,36 @@
 /*---------------------
    Mentions section
   ----------------------*/
-.example-wrapper-mentions {
-    height: 85vh;
-    .mentions-content {
+.wrapper-mentions {
+    background: $color2;
+    padding: .5rem;
+    overflow: scroll;
+    width: 100%;
+
+    .container.mentions {
         margin : 1rem auto;
-        overflow: scroll;
         height: 100%;
         width: 100%;
         overflow-x: hidden;
 
-        h1,
-        h2 {
+        h1 {
             text-align: center;
+            color: $color4;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            color: $color4;
         }
         
-        p {
-            margin-left: 1rem;
-            margin-right: 1rem;
-            font-size: 20px;
+        .mentions-text p {
+            font-size: 1.2rem;
+            color: $color3;
+
+            a {
+                color: $color1;
+            }
         }
     } 
 }
