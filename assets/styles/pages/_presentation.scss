@@ -3,43 +3,50 @@
    ---------------------*/
 .example-wrapper-presentation {
   height: 85vh;
-  .presentation-content {
-    margin: 1rem auto;
-    // overflow: scroll;
+  background-color: $color2;
+  padding: 0.5rem;
+
+  .container.presentation {
+    margin: 2rem auto;
     height: 100%;
     width: 100%;
     
-    h1 {
+    h1, h2 {
       text-align: center;
+      color: $color4;
     }
     
-    p {
+    .text-presentation p {
       margin-left: 1rem;
       margin-right: 1rem;
-      font-size: 1.56rem;
+      font-size: 1.4rem;
+      color: $color3;
     }
     
-    .imagespresentation {
-      margin: 2rem auto;
-      text-align: center;
-    }
-    
-    img {
-      margin-left: 4rem;
-      margin-bottom: 1rem;
-    }
-    
-    ul {
-      margin-bottom: 0rem;
-      padding-left: 1rem;
-      list-style: none;
-    
-      li {
-        font-family: 'EB Garamond', serif;
-        font-size: 1.56rem;
-      }
-    }
+    .team-presentation {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: .8rem;
+
+      .images-presentation {
+          margin: 2rem auto;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          figcaption {
+            margin-top: .5rem;
+            color: $color4;
+          }
+
+          p {
+            font-size: 1.4rem;
+            color: $color3;
+          }
+        }
+      }  
   }
-  
 }
 
