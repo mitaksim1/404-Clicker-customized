@@ -60,7 +60,7 @@ class RegistrationController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
 
             //vérifier si les champs saisis pour cet utilisateur existent déjà dans la base de données
-            if ($this->getUser()) {
+            if ($user) {
                 $this->addFlash('error', 'Utilisateur et/ou email déjà enregistré');
                 return $this->redirectToRoute('inscription');
             }
