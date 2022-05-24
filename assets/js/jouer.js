@@ -16,7 +16,7 @@ let game = {
 
 		setTimeout(() => {
 			game.modal.style.display = "none";
-		}, 1500);
+		}, 2000);
 		
 		game.image.addEventListener("click", game.handleClick);
 		game.saveButton.addEventListener("click", game.loadGame);

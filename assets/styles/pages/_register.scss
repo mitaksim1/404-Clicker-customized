@@ -21,15 +21,16 @@
         flex-direction: column;
         align-items: center;
 
-        .form-field {
-            margin-top: 0.5rem;
-            width: calc(100% - 2rem);
+        .form-label {
+            color: $color3;
+        }
 
-            label {
-                font-family: 'EB Garamond';
-                font-weight: 400;
-                font-size: 1.2rem;
-            }
+        .mb-3 {
+            width: 100%;
+        }
+
+        input {
+            width: 100%;
         }
     }
 

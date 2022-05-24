@@ -3,8 +3,7 @@
 ------------------------*/
 .home-wrapper {
     height: 85vh;
-    background: $color2;
-    padding: .5rem;
+   
     .container.home {
         margin: 1rem auto;
         width: 100%;
@@ -30,6 +29,10 @@
         
         .text-container a {
             text-decoration: none;
+            
+            strong {
+                color: $color1;
+            }
         }
         
         .home-wrapper-text {

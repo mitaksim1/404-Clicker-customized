@@ -56,7 +56,6 @@
                 font-size: .6rem;
                 color: $color2;
                 margin-right: .6rem;
-                border: 1px solid $color1;
                 padding: 1rem .8rem;
                 border-radius: .6rem;
                 background: $color1;
@@ -64,6 +63,7 @@
 
                 &:hover {
                     color: $color3;
+                    background-color: $color4;
                 }
             }
         }

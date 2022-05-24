@@ -30,9 +30,11 @@ body {
     -webkit-font-smoothing: antialiased;
     position: relative;
     width: 100%;
+    background-color: $color2;
 
     h1, h2 {
         font-family: 'Press Start 2P', cursive;
+        color: $color4;
     }
 
     p {
@@ -42,7 +44,7 @@ body {
     a {
         text-decoration: none;
     }
-    .alert-success {
+    .alert-message {
         background-color: $color1;
         color: $color3;
         text-align: center;
