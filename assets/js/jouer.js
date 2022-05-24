@@ -2,7 +2,7 @@ const { default: axios } = require('axios');
 
 let game = {
 	score: document.getElementById("score"),
-	image: document.getElementById("image"),
+	image: document.querySelector(".image"),
 	saveButton: document.querySelector('.save-points'),
 	modal: document.querySelector(".modal"),
 	scoreJS: parseFloat(score.dataset.userPoints),
@@ -26,7 +26,7 @@ let game = {
 	handleClick: function () {
 		game.scoreJS = game.scoreJS + game.incrementeur;
 
-		game.score.innerHTML = "<p>Le nombre d'erreur(s) est de \n" + game.scoreJS + "</p>";
+		game.score.innerHTML = "<p><span>Points : \n</span>" + game.scoreJS + "</p>";
 
 		if (game.scoreJS === game.changeLevelScore) {
 			// console.log('Changement de niveau');

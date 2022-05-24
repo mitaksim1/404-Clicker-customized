@@ -28,10 +28,6 @@ body {
     min-height: 100%;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    background-image: url("../images/background_404.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
     position: relative;
     width: 100%;
 
@@ -47,7 +43,7 @@ body {
         text-decoration: none;
     }
     .alert-success {
-        background-color: $color2;
+        background-color: $color1;
         color: $color3;
         text-align: center;
         border: none;
