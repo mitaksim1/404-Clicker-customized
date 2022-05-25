@@ -1,9 +1,22 @@
 /*----------------------
    Register Section
  ------------------------*/
+ .reset-wrapper {
+     display: flex;
+     flex-direction: column;
+     align-items:center;
+     justify-content: center;
+     height: 90vh;
 
-.register-wrapper{
-    height: 80vh;
+    .reset-title {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1.75rem;
+    }
+}
+
+.register-wrapper {
+    // height: 80vh;
     width: 100%;
     margin: 2rem auto;
     display: flex;
@@ -11,17 +24,20 @@
     justify-content: center;
     align-items: center;
     max-width: 450px;
-    
-    p{font-size:1.0rem;}
 
-    .form-content{
+    p {
+        font-size: 1.0rem;
+    }
+
+    .form-content {
         padding: 2rem;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        .form-label {
+        .form-label,
+        .form-small small {
             color: $color3;
         }
 
