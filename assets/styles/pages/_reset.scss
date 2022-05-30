@@ -1,0 +1,25 @@
+/*----------------------
+   Reset Section
+ ------------------------*/
+.reset-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+
+    .reset-title {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1.75rem;
+    }
+
+    .reset-text {
+        color: $color3;
+        font-size: 1.2rem;
+
+        a {
+            color: $color1;
+        }
+    }
+}

@@ -21,7 +21,7 @@
     <div class="container jouer">
         <p><span>Pseudo :</span> {{app.user.username}}</p>
         <p><span>Niveau :</span> {{ app.user.level.getNomLevel() }}</p>
-        {# Passage d'un data- attribut pour récupérer les points dans JS #}
+        {# Passage d'un data-attribut pour récupérer les points dans JS #}
         <div id="score" data-user-level="{{ changeLevel }}" data-user-points="{{ app.user.points }}">
         <p><span>Points :</span> {{app.user.points}} </p>
         </div>

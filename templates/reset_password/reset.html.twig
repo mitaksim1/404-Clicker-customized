@@ -3,19 +3,19 @@
 {% block title %}Réinitialiser votre mot de passe{% endblock %}
 
 {% block body %}
-
-    <h1>Réinitialiser votre mot de passe</h1>
-    
+<section class="reset-wrapper">
+    <h1 class="reset-title">Réinitialiser votre mot de passe</h1>
     <div class="register-wrapper">
-
-        {{ form_start(resetForm) }}
-
+        <div class="form-content">
+            {{ form_start(resetForm) }}
+        
             {{ form_row(resetForm.plainPassword) }}
-
-            <button class="btn btn-lg">Reset password</button>
-            
-        {{ form_end(resetForm) }}
-
-    </div>
-
+            <div class="form-content">
+                <button class="btn btn-lg">Reset password</button>
+            </div>
+        
+            {{ form_end(resetForm) }}
+        </div>
+    </div>   
+</section>
 {% endblock %}

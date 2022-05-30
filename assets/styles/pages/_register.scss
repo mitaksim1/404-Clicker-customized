@@ -1,22 +1,7 @@
 /*----------------------
    Register Section
  ------------------------*/
- .reset-wrapper {
-     display: flex;
-     flex-direction: column;
-     align-items:center;
-     justify-content: center;
-     height: 90vh;
-
-    .reset-title {
-        text-align: center;
-        margin-top: 2rem;
-        font-size: 1.75rem;
-    }
-}
-
 .register-wrapper {
-    // height: 80vh;
     width: 100%;
     margin: 2rem auto;
     display: flex;
